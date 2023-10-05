@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Urlaubsantrag</title>
+    <link rel="stylesheet" href="indexStyle.css"/>
+    <link rel="stylesheet" href="indexMenuBut.css"/>
+    <script src="indexScript.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Urlaubsantrag Projekt</h1>
+    </header>
+    <div class="wrapper">
+    <main>
+        <section class="form-section">
+            <div class="form-container">
+                <h2>Urlaubsantrag</h2>
+                <form>
+                    <table class="form-table">
+                        <tr>
+                            <td><label for="employeeNumber">Personalnummer:</label></td>
+                            <td><input type="number" id="employeeNumber" name="employeeNumber" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="department">Abteilung:</label></td>
+                            <td><input type="text" id="department" name="department" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="startDate">Von:</label></td>
+                            <td><input type="date" id="startDate" name="startDate" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="endDate">Bis:</label></td>
+                            <td><input type="date" id="endDate" name="endDate" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><input type="submit" value="Submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2023 Urlaubsantrag Projekt</p>
+    </footer>
+
+</body>
+</html>

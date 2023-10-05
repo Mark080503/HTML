@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link rel="stylesheet" href="indexStyle.css"/>
+    <script src="registerScript.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Register</h1>
+    </header>
+    <div class="wrapper">
+    <main>
+        <section class="form-section">
+            <div class="form-container">
+                <h2>Register</h2>
+                <form action="dbConnect.php" onsubmit="return validateForm()">
+                    <table class="form-table">
+                        <tr>
+                            <td><label for="username">Name:</label></td>
+                            <td><input type="text" id="username" name="username" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="employee_number">Employee Number:</label></td>
+                            <td><input type="number" id="employee_number" name="employee_number" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password:</label></td>
+                            <td><input type="password" id="password" name="password" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="confirmPassword">Confirm Password:</label></td>
+                            <td><input type="password" id="confirmPassword" name="confirmPassword" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><input type="submit" value="Register"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" id="error-message" class="error-message"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Urlaubsantrag Projekt</p>
+    </footer>
+
+</body>
+</html>
