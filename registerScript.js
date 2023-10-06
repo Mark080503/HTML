@@ -17,7 +17,7 @@ function validateForm() {
         return false;
     } else {
         errorMessage.innerText = '';
-        confirmPasswordField.style.border = ''; // Reset border style test
+        confirmPasswordField.style.border = ''; // Reset border style
     }
 
     return true;
